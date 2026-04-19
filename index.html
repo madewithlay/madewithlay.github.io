@@ -10,6 +10,27 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>Coming soon.</main>
+  <main id="phrase">Coming soon.</main>
+  <script>
+    const phrases = [
+      "Not here yet",
+      "Almost usable",
+      "Still cooking",
+      "In progress, clearly",
+      "Not quite ready",
+      "Give it a second",
+      "On the way",
+      "Getting there",
+      "Half done, half hope",
+      "Exists, technically",
+      "Coming together",
+      "Work in progress",
+      "Soon-ish",
+      "Nearly a thing",
+      "Just not yet"
+    ];
+    document.getElementById("phrase").textContent =
+      phrases[Math.floor(Math.random() * phrases.length)] + ".";
+  </script>
 </body>
 </html>
