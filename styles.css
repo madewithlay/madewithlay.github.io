@@ -1,60 +1,19 @@
 :root {
   color-scheme: dark;
-  --bg: #0a0a0f;
-  --fg: rgba(255, 255, 255, 0.94);
-  --dim: rgba(255, 255, 255, 0.56);
-  --accent: #0a84ff;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { height: 100%; }
 
 body {
-  background: var(--bg);
-  color: var(--fg);
-  font: 400 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Helvetica Neue", Arial, sans-serif;
+  background: #0a0a0f;
+  color: rgba(255, 255, 255, 0.88);
+  font: 500 clamp(22px, 3vw, 28px)/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.015em;
   display: grid;
   place-items: center;
   min-height: 100vh;
   padding: 32px;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: -20% -20% auto auto;
-  width: 60vw;
-  height: 60vw;
-  background: radial-gradient(closest-side, rgba(10, 132, 255, 0.18), transparent 70%);
-  pointer-events: none;
-  filter: blur(20px);
-  z-index: -1;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  text-align: center;
-}
-
-.wordmark {
-  font-size: clamp(80px, 14vw, 160px);
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  line-height: 1;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.75) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.tagline {
-  font-size: clamp(18px, 2.4vw, 22px);
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  color: var(--dim);
 }
