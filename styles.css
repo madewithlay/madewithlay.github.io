@@ -9,7 +9,7 @@ body {
   position: fixed;
   inset: 0;
   touch-action: none;
-  background: #000000;
+  background: #0a0a0f;
   color: rgba(255, 255, 255, 0.88);
   font: 500 clamp(22px, 3vw, 28px)/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
